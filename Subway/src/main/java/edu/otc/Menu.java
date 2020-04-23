@@ -9,9 +9,6 @@ package edu.otc;
  *
  * @author Dima
  */
-public class Subway { // this is the main class 
+public class Menu { // this class should display the menu with availible items and update the menu as the customer selects more items.
     
-    public static void main(String[] args){
-        
-    }
 }
