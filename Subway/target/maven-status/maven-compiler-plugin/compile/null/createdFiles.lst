@@ -1,9 +1,6 @@
 edu\otc\SystemInfo.class
-edu\otc\Selection.class
+edu\otc\Menu.class
 module-info.class
-edu\otc\Merge.class
-edu\otc\Heap.class
-edu\otc\Quick.class
-edu\otc\Bubble.class
-edu\otc\Radix.class
-edu\otc\SortTimes.class
+edu\otc\Bread.class
+edu\otc\DisplayOrder.class
+edu\otc\Subway.class

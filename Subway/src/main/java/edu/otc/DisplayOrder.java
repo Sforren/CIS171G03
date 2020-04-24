@@ -9,6 +9,6 @@ package edu.otc;
  *
  * @author Dima
  */
-public class DisplayOrder { // this classs should display and update the order as the customer adds more items to the sandwich.
+public class DisplayOrder { // this class should display and update the order as the customer adds more items to the sandwich.
     
 }
