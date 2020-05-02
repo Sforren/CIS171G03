@@ -1,6 +1,6 @@
 edu\otc\SystemInfo.class
 edu\otc\Menu.class
+edu\otc\Ingredient.class
 module-info.class
-edu\otc\Bread.class
 edu\otc\DisplayOrder.class
 edu\otc\Subway.class
