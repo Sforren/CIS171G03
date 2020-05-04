@@ -1,6 +1,6 @@
 # Subway
 
-Example Description
+This project will be an ordering menu for Subway. It will include an ordering menu pane and a pane to display the final order along with the price of the sandwich(if we have time for this extra feature)
 
 ## Example Output
 
@@ -9,12 +9,13 @@ This image will display as your example output. Name the image README.jpg in you
 ![Sample Output](README.jpg)
 
 ## Analysis Steps
-
+I split this project into two parts, building the sandwich using method calling and some programming logic and storing the information in an array, 
+and displaying that information in a javafx pane.
 
 
 ### Design
-
-
+We were originally going to have two panes side by side, with one pane asking questions about the sandwich and the other pane updating the price of the sandwich and the ingredients.
+We were unable to implement javafx so I did the best that I could in the console.
 
 
 ```
@@ -23,11 +24,11 @@ Give examples
 
 ### Testing
 
-
+I ran the code a few times and selected different numbers each time.
 
 ## Notes
 
-
+I did not get the team participation that I expected and the project turned out far worse than what it could have been.
 
 ## Do not change content below this line
 ## Adapted from a README Built With

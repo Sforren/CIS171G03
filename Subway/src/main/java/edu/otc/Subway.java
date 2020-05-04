@@ -16,20 +16,22 @@ public class Subway { // this is the main class. it stores ingredients and has m
     public double finalPrice = 0;
 
     public static void main(String[] args) {
-       Menu menu = new Menu();
-       menu.selectSize();
-       menu.selectBread();
-       menu.selectMeat();
-       menu.selectCheese();
-       menu.selectVeggies1(); // for whatever reason the for loop didnt want to work so i had to do this ugly workaround
-       menu.selectVeggies2();
-       menu.selectVeggies3();
-       menu.selectSauce();
-       menu.selectSpices();
-               
+        Menu menu = new Menu();
+        menu.selectSize();
+        menu.selectBread();
+        menu.selectMeat();
+        menu.selectCheese();
+       // menu.selectVeggies();
+        menu.selectVeggies1(); // for whatever reason the for loop didnt want to work so i had to do this ugly workaround
+        menu.selectVeggies2();
+        menu.selectVeggies3();
+        menu.selectSauce();
+        menu.selectSpices();
+        menu.showOrder();
         // todos
         // display the questions in a gui
-        // display the currentOrder[] array in a gui
+        // display the currentOrder[] array in a gui. this may mean that we have to get rid of the prices and the pictures so that we don't have to parse the objects since 
+        // we might not end up using the other features because of time.
         // i added some prices to the ingredients but we probably dont have time for this anymore
         // add images (we probably dont have time for this anymore either)
     }
@@ -80,7 +82,7 @@ public class Subway { // this is the main class. it stores ingredients and has m
         new Ingredient("Mustard", 0.25, "mustard.png"),
         new Ingredient("Ranch", 0.25, "ranch.png")
     };
-    
+
     public static final Ingredient[] SpiceList = {
         new Ingredient("Salt", 0.00, "salt.png"),
         new Ingredient("Pepper", 0.00, "pepper.png"),

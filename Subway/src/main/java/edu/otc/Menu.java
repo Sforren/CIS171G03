@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Menu { // this class should display the menu with availible items and update the menu as the customer selects more items.
 
     DisplayOrder display = new DisplayOrder();
-    public int steps; // count the step that the customer is on and display the approporiate menu options. if they are on the final step,
+    public static int steps = 0; // count the step that the customer is on and display the approporiate menu options. if they are on the final step,
     //display the price and the thank you message. this is for the javafx.
 
     public void selectSize() {
@@ -35,6 +35,7 @@ public class Menu { // this class should display the menu with availible items a
                 size = 12;
             }
         }
+        steps++;
     }
 
     public void selectBread() {
@@ -49,7 +50,7 @@ public class Menu { // this class should display the menu with availible items a
 
             display.currentOrder[1] = breadList[choice - 1];
         }
-
+        steps++;
     }
 
     public void selectMeat() {
@@ -64,7 +65,7 @@ public class Menu { // this class should display the menu with availible items a
 
             display.currentOrder[2] = breadList[choice - 1];
         }
-
+        steps++;
     }
 
     public void selectCheese() {
@@ -79,9 +80,9 @@ public class Menu { // this class should display the menu with availible items a
 
             display.currentOrder[3] = breadList[choice - 1];
         }
-
+        steps++;
     }
-    
+
     /*
     public void selectVeggies() {
         for (int i = 0; i < 3; i++) {
@@ -96,10 +97,10 @@ public class Menu { // this class should display the menu with availible items a
 
                 display.currentOrder[4 + i] = breadList[choice - 1];
             }
+    steps++;
         }
     }
-    */
-    
+     */
     public void selectVeggies1() {
 
         System.out.println("What kind of veggies would you like? pick up to 3");
@@ -113,7 +114,7 @@ public class Menu { // this class should display the menu with availible items a
 
             display.currentOrder[4] = breadList[choice - 1];
         }
-
+        steps++;
     }
 
     public void selectVeggies2() {
@@ -129,7 +130,7 @@ public class Menu { // this class should display the menu with availible items a
 
             display.currentOrder[5] = breadList[choice - 1];
         }
-
+        steps++;
     }
 
     public void selectVeggies3() {
@@ -145,7 +146,7 @@ public class Menu { // this class should display the menu with availible items a
 
             display.currentOrder[6] = breadList[choice - 1];
         }
-
+        steps++;
     }
 
     public void selectSauce() {
@@ -160,7 +161,7 @@ public class Menu { // this class should display the menu with availible items a
 
             display.currentOrder[7] = breadList[choice - 1];
         }
-
+        steps++;
     }
 
     public void selectSpices() {
@@ -174,6 +175,14 @@ public class Menu { // this class should display the menu with availible items a
             choice = input.nextInt();
 
             display.currentOrder[8] = breadList[choice - 1];
+        }
+        steps++;
+
+    }
+
+    public void showOrder() {
+        if (steps > 8) {
+            display.DisplayOrder();
         }
     }
 }
